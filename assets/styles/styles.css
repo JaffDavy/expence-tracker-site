@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   background: linear-gradient(135deg, #141e30, #243b55);
   color: #fff;
@@ -14,6 +16,7 @@ body {
   align-items: center;
   padding: 20px;
 }
+
 .container {
   background: #ffffff1a;
   backdrop-filter: blur(15px);
@@ -23,23 +26,28 @@ body {
   max-width: 400px;
   box-shadow: 0 8px 20px #0000004d;
 }
+
 header {
   text-align: center;
   margin-bottom: 20px;
 }
+
 header h2 {
   font-size: 1.8rem;
   color: #00c9a7;
   letter-spacing: 1px;
 }
+
 .balance-section {
   text-align: center;
   margin-bottom: 25px;
 }
+
 .balance-section h1 {
   font-size: 2.2rem;
   color: #00ffb3;
 }
+
 .inc-exp-container {
   display: flex;
   justify-content: space-between;
@@ -48,36 +56,42 @@ header h2 {
   border-radius: 10px;
   padding: 15px;
 }
+
 .inc-exp-container div {
   text-align: center;
   flex: 1;
 }
+
 .money.plus {
   color: #00ffb3;
   font-weight: 600;
 }
+
 .money.minus {
   color: #ff4d4d;
   font-weight: 600;
 }
+
 .history-section h3,
 .form-section h3 {
-  border-bottom: 2px solid #ffffff33;
+  border-bottom: 2px solid #fff3;
   padding-bottom: 5px;
   margin-bottom: 10px;
   text-transform: uppercase;
   font-size: 0.9rem;
   color: #ddd;
 }
+
 .list {
   list-style-type: none;
   margin-bottom: 20px;
   max-height: 200px;
   overflow-y: auto;
 }
+
 .list li {
-  background: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
+  background: #ffffff26;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,15 +101,19 @@ header h2 {
   position: relative;
   transition: transform 0.2s ease;
 }
+
 .list li.plus {
   border-right: 5px solid #00ffb3;
 }
+
 .list li.minus {
   border-right: 5px solid #ff4d4d;
 }
+
 .list li:hover {
   transform: scale(1.02);
 }
+
 .delete-btn {
   background: transparent;
   border: none;
@@ -104,27 +122,32 @@ header h2 {
   cursor: pointer;
   font-size: 16px;
 }
+
 .form-control {
   margin-bottom: 15px;
 }
+
 .form-control label {
   display: block;
   margin-bottom: 6px;
   color: #ddd;
   font-size: 0.9rem;
 }
+
 .form-control input {
   width: 100%;
   padding: 10px;
   border-radius: 8px;
   border: none;
   outline: none;
-  background: #ffffff33;
+  background: #fff3;
   color: #fff;
 }
+
 .form-control input::placeholder {
   color: #bbb;
 }
+
 .btn {
   width: 100%;
   background: #00c9a7;
@@ -136,6 +159,7 @@ header h2 {
   transition: background 0.3s;
   font-weight: 600;
 }
+
 .btn:hover {
   background: #00ffb3;
   color: #000;
