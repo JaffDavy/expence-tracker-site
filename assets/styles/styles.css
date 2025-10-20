@@ -87,6 +87,7 @@ header h2 {
   margin-bottom: 20px;
   max-height: 200px;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .list li {
