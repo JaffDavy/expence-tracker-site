@@ -54,10 +54,17 @@ function updateValues () {
   const expense = (
     amounts.filter((item) => item < 0).reduce((acc, item) => acc + item, 0) * -1
   ).toFixed(2)
+
   balance.innerText = `${total}frs`
   moneyPlus.innerText = `+${income}frs`
   moneyMinus.innerText = `-${expense}frs`
+  if (total < 0) {
+    balance.style.color = 'red'
+  } else {
+    balance
+  }
 }
+
 // Remove transaction by ID
 function removeTransaction (id) {
   transactions = transactions.filter((transaction) => transaction.id !== id)
