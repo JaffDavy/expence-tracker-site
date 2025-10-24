@@ -59,9 +59,9 @@ function updateValues () {
   moneyPlus.innerText = `+${income}frs`
   moneyMinus.innerText = `-${expense}frs`
   if (total < 0) {
-    balance.style.color = 'red'
+    balance.style.color = '#ff4d4d'
   } else {
-    balance
+    balance.style.color = '#00ffb3'
   }
 }
 
